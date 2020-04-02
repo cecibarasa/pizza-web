@@ -1,0 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+.jumbotron-fluid{
+    background-image: url("../image/pizza.jpg");
+    height: 500px;
+    background-position: 500px;
+    background-size: 500px;
+}
+.overlay{
+    padding: 300px;
+}

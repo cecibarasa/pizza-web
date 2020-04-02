@@ -11,12 +11,38 @@ html{
 .overlay{
     padding: 300px;
 }
-.carousel-inner{
-    size: 50%;
-    align-content: center;
-    width: 400px;
-}
+
 .size{
-    background-image: url("https://i.pinimg.com/236x/80/0a/cb/800acb4827816614502596b88e2d81bd.jpg");
+    background-image: url("https://i.pinimg.com/564x/82/92/02/82920266a89fa0125d64373ec881d670.jpg");
     background-size: cover;
 }
+#option{
+    box-sizing: content-box;
+    background-color: teal;
+    background-image: url("https://i.pinimg.com/236x/e3/9c/58/e39c58d3f5ec769d3f60b03a302e0a76.jpg");
+    align-items: center;
+    background-size: 50%;
+    height: 50%;
+}
+.option1{
+    border: thick;
+}
+.carousel-item {
+    margin: 50px;
+    position: center;
+    display: none;
+    width: 100%;
+    margin-left: 500px;
+    margin-right: 500px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-item {
+      transition: none;
+    }
+  }

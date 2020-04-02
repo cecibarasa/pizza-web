@@ -2,11 +2,13 @@ html{
     box-sizing: border-box;
 }
 .jumbotron-fluid{
-    background-image: url("../image/pizza.jpg");
+    background-image: url("../image/onion.jpg");
     height: 500px;
     background-position: 500px;
     background-size: 500px;
+    color: white;
 }
 .overlay{
     padding: 300px;
 }
+

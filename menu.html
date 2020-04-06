@@ -69,5 +69,67 @@
                             <option value="crispy">Cripy</option>
                             <option value="stuffed">Stuffed</option>
                         </select>
+                        <label for="number">Number of pizza</label>
+                        <input type="number" class="form-control" id="number" placeholder="Number of pizza" min="1" required>
+                </form>
+                <a href="#submit">
+                <button type="submit" class="btn btn-success checkout">Order</button>
+                </a>
+            </div>
+        </div>
+    </div>
+                <div class="order-summary" id="sum-order">
+    <h1 class="text-center" id="summary">Order Summary</h1>
+    <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+    <ol id="list" class="text-center sum">
+    </ol>
+
+
+    <div class="cdata-overlay">
+        <div class="customerdata row">
+            <div class="col-sm-3"></div>
+            <form action="" class="form-group col-sm-6 data">
+                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+            </form>
+
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="d-block mx-auto text-center">
+        <button class='deliver'>Delivery</button>
+        <button class='delivernot'>Pick Up</button>
+    </div>
+</div>
+<div class="contacts">
+    <div class="contact-overlay">
+        <h1 class="text-center contact text-white">Contacts:</h1>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 subs">
+                <h1 class="text-white text-center"> Call Us </h1>
+                <p class="text-center">+254 1211 5461</p>
+                <form>
+                    <div class="email-info">
+                        <div class="form-group fill-all-form">
+                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
+                                   required="">
+                        </div>
+                    </div>
+                    <div class=" email-info text-center">
+                        <button class="btn click-me" onclick="subscribe();">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5">
+                <h4 class="text-center get-pizza">We love feedback..send us a mail</h4>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

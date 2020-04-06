@@ -1,7 +1,9 @@
 html{
     box-sizing: border-box;
 }
-
+.jumbotron{
+    background-image: url("/image/wood.jpg");
+}
 .overlay{
     width: 100%;
 }

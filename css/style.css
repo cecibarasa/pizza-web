@@ -1,27 +1,27 @@
 html{
     box-sizing: border-box;
 }
-.jumbotron-fluid{
-    background-image: url("https://i.pinimg.com/236x/83/68/a0/8368a09c06e7cfab677d2b56d5cdb5f1.jpg");
-    height: 500px;
-    background-position: 500px;
-    background-size: 500px;
-    color: white;
+.jumbotron{
+    
 }
 .overlay{
-    padding: 300px;
+    width: 100%;
+}
+.border{
+    float: left;
+    background-color:  #ff9966;
 }
 
 .size{
-    background-image: url("https://i.pinimg.com/564x/82/92/02/82920266a89fa0125d64373ec881d670.jpg");
-    background-size: cover;
+    background-image: url("https://i.pinimg.com/236x/39/0b/14/390b1481cd1e714d78af4431029dea6e.jpg");
+    background-size: inherit;
 }
 #option{
     box-sizing: content-box;
     background-color: teal;
     background-image: url("https://i.pinimg.com/236x/e3/9c/58/e39c58d3f5ec769d3f60b03a302e0a76.jpg");
     align-items: center;
-    background-size: 50%;
+    background-size: 80%;
     height: 50%;
 }
 .option1{
@@ -32,8 +32,9 @@ html{
     position: center;
     display: none;
     width: 100%;
-    margin-left: 500px;
-    margin-right: 500px;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: -webkit-transform 0.6s ease-in-out;
@@ -45,4 +46,7 @@ html{
     .carousel-item {
       transition: none;
     }
+  }
+  #demo{
+      position: center;
   }

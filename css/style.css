@@ -50,3 +50,6 @@ html{
   #demo{
       position: center;
   }
+.navbar{
+    float: right;
+}

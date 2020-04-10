@@ -1,6 +1,6 @@
 $(function pizza(pizza) {
     this.pizza = pizza;
-    this.flavor = flavor;
+    this.flavor = [];
 
 })
 
@@ -36,7 +36,7 @@ var crust = {
 //UI Logic
 $(document).ready(function() {
     $("#submit").click(function() {
-        $(".orders #order-pizza").append('<div class="form-group">' +
+        $(".checkout").append('<div class="form-group">' +
             '<label for="flavor">Pick your pizza flavor</label>' +
             '<select class="flavor">' +
             '<option value="bbq">Barbeque Steak</option>' +
@@ -84,6 +84,47 @@ $(document).ready(function() {
             '<label for="number">Number of pizza</label>' +
             '<input type="number" class="form-control" id="number" placeholder="Number of pizza" min="1">' +
             '</input>' +
-            '</div>')
+            '</div>');
+        $("form#newPizza").submit(function(event) {
+            event.preventDefault();
+            $(".form-group").each(function() {
+                var flavor = $(this).find("input.flavor").val();
+                var size = $(this).find("input.size").val();
+                var topping = $(this).find("input.topping").val();
+                var crust = $(this).find("input.crust").val();
+                var number = $(this).find("input#number").val();
+                var newPizza = newPizza(inputtedFlavor, inputtedSize, inputtedTopping, inputtedCrust, inputtedNumber)
+            })
+        })
+
+        function getCrust() {
+            var selectedCrust = document.getElementById("crust").value;
+            return parseInt(selectedCrust);
+        }
+
+        function getToppings() {
+            var selectedToppings = document.getElementById("topping").value;
+            return parseInt(selectedToppings);
+        }
+
+        function getSize() {
+            var sise = document.getElementById("size").value;
+            return parseInt(size);
+        }
+
+        function selectPizza() {
+            var pizza = document.getElementById("flavor").value;
+            return parseInt(pizza);
+        }
+
+        function getNumber() {
+            var selectedNumber = document.getElementById("number").value;
+            return parseInt(selectedNumber);
+        }
+
+        function getTotalAmount() {
+            var totalAmount = (selectPizza() + getSize() + getCrust() + getSize() + getToppings()) * getNumber();
+            alert(" The total amount is " + (totalAmount) + "" + " Thank you for choosing us.");
+        }
     })
 })

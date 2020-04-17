@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="intro">
+            <nav class="navbar navbar-md navbar-light bg-warning">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,75 +27,68 @@
                     </ul>
                 </div>
             </nav>
-            <img src="image/woman.jpg" alt="chef">
-        </div>
-        <div class="orders" id="order">
-            <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-            <div class="form-group row" id="form">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 order-overlay text-center" id="order">
-                    <form class="col-sm-6 offset-sm-3 text-center">
-                        <label for="flavor">Pick your pizza Flavour:</label>
-                        <select class="custom-select custom-select-md mb-3 flavour" required>
-                        <option value="bbq">Barbeque Steak</option>
-                        <option value="hawaiian">Hawaiian</option>
-                        <option value="periperi">Chicken Peri Peri</option>
-                        <option value="tikka">Chicken Tikka</option>
-                        <option value="delux">Meat Delux</option>
-                        <option value="vegi">Veggetarian Pizza</option>
-                        <option value="boerewors">Boerewors</option>
-                        <option value="macon">Chicken Macon Barbeque</option>
-                        <option value="peperon">Beef Pepperoni</option>
-                        <option value="cbpepperoni">Chicken and Beef Pepperoni</option>
-                        </select>
+            <div class="container-overlay">
+                <img src="image/duece.jpeg" alt="deuce" class="rounded-circle" width="300px" height="300px">
+                <br>
+                <br>
+                <br>
+                <h1><strong>PARLORPIZZERIA</strong></h1>
+                <h4>Confía en mí, querrás más</h4>
+            </div>
+            <div class="orders">
+                <form id="form" class="col-md-12">
+                    <div class="form-group row">
+                        <div class="col-md-8"></div>
+                        <label for="flavor">Pick your pizza flavor</label>
+                        <select class="flavor">
+                    <option value="bbq">Barbeque Steak</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="peperi">Chicken Peri Peri</option>
+                    <option value="tikka">Chicken Tikka</option>
+                    <option value="delux">Meat Delux</option>
+                    <option value="veggi">Veggeterian Pizza</option>
+                    <option value="boerwors">Boerwors</option>
+                    <option value="macon">Chicken Macon Barbeque</option>
+                    <option value="peperon">Beef Pepperoni</option>
+                    <option value="cbpepperoni">Chicken and Beef Pepperoni</option>
+                    </select>
                         <label for="size">Choose your size</label>
-                        <select class="custom-select custom select-md mb-3 flavor" required>
-                            <option value="regular">Regular</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                        </select>
-                        <label for="topping">Choose your favorite toppings</label>
-                        <select class="custom-select custom select-md mb-3 flavor" required>
-                            <option value="tomato">Tomato</option>
-                            <option value="onion">Onion</option>
-                            <option value="bacon">Bacon</option>
-                            <option value="pineapple">Pineapple</option>
-                            <option value="mayo">Mayonnaise</option>
-                            <option value="peper">Peper</option>
-                            <option value="cheese">Cheese</option>
-                            <option value="mushroom">Mushroom</option>
-                            <option value="sweetcorn">Sweetcorn</option>
-                        </select>
+                        <select class="size">
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    </select>
+                        <label for="topping">Choose your favorite toopings</label>
+                        <select class="topping">
+                    <option value="tomato">Tomato @100</option>
+                    <option value="onion">Onion @100</option>
+                    <option value="bacon">Bacon @200</option>
+                    <option value="pineapple">Pineapple @150</option>
+                    <option value="mayo">Mayonnaise @200</option>
+                    <option value="peper">Peper @150</option>
+                    <option value="cheese">Cheese @200</option>
+                    <option value="mushroom">Mushroom @200</option>
+                    <option value="sweetcorn">Sweetcorn @200</option>
+                    </select>
                         <label for="crust">Pick your crust</label>
-                        <select class="custom-select custom-select-md mb3 flavor" required>
-                            <option value="glutten">Glutten Free</option>
-                            <option value="crispy">Cripy</option>
-                            <option value="stuffed">Stuffed</option>
-                        </select>
+                        <select class="crust">
+                        <option value="glutten">Glutten Free</option>
+                        <option value="crispy">Crispy</option>
+                        <option value="stuffed">Stuffed</option>
+                    </select>
                         <label for="number">Number of pizza</label>
-                        <input type="number" class="form-control" id="number" placeholder="Number of pizza" min="1" required>
-                        <button type="submit" class="btn btn-success checkout">Order</button>
-
-                    </form>
-                    <div class="col-md-6">
-                        <div id="show-contact">
-                            <h2></h2>
-                            <p>First name: <span class="first-name"></span></p>
-                            <p>Last name: <span class="last-name"></span></p>
-                            <p>Addresses:</p>
-                            <ul id="addresses">
-
-                            </ul>
-                        </div>
+                        <input type="number" class="form-control" id="number" placeholder="Number of pizza" min="1">
+                        </input>
                     </div>
-
-
-                </div>
+                    <button class="btn btn-success mx-auto d-block submit" id="button" type="submit">Submit</button>
+                </form>
             </div>
         </div>
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery-3.4.1.js"></script>
-        <script src="js/script.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

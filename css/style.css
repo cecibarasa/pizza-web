@@ -2,45 +2,38 @@ html {
     box-sizing: border-box;
 }
 
-.jumbotron {
-    background-image: url("/image/wood.jpg");
+.container {
+    background-attachment: fixed;
+    background-image: url("../image/black.jpg");
 }
 
-.overlay {
-    width: 100%;
+.navbar {
+    float: right;
 }
 
-.border {
-    float: left;
-    background-color: #ff9966;
+.container-overlay h1 {
+    text-align: center;
+    color: rgb(194, 114, 49);
+    font-size: 100px;
 }
 
-.size {
-    background-image: url("https://i.pinimg.com/236x/39/0b/14/390b1481cd1e714d78af4431029dea6e.jpg");
-    background-size: inherit;
+.container-overlay h4 {
+    color: rgb(194, 114, 49);
+    text-align: center;
+    font-size: 50px;
 }
 
-#option {
-    box-sizing: content-box;
-    background-color: teal;
-    background-image: url("https://i.pinimg.com/236x/e3/9c/58/e39c58d3f5ec769d3f60b03a302e0a76.jpg");
-    align-items: center;
-    background-size: 80%;
-    height: 50%;
-}
-
-.option1 {
-    border: thick;
+.about img {
+    width: 500px;
+    height: 500px;
 }
 
 .carousel-item {
-    margin: 50px;
-    position: center;
+    position: relative;
     display: none;
+    padding-left: 300px;
+    padding-right: 300px;
     width: 100%;
-    padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: -webkit-transform 0.6s ease-in-out;
@@ -54,28 +47,16 @@ html {
     }
 }
 
-#demo {
-    position: center;
+.intro li {
+    background: transparent;
+    color: khaki;
 }
 
-.navbar {
-    float: right;
+.jumbotron {
+    background-image: url("../image/red1.jpeg");
+    background-attachment: fixed;
 }
 
-.orders {
-    background-color: khaki;
-}
-
-.container {
-    background-image: url("https://images.unsplash.com/photo-1502056247561-73539df36440?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-}
-
-.restaurant {
-    background-image: url("https://images.unsplash.com/photo-1542836463-42e739ca2370?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-}
-
-.jumbotron-fluid {
-    padding-right: 50px;
-    padding-left: 50px;
-    border-radius: 50px;
+#navbarNav {
+    color: khaki;
 }

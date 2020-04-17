@@ -21,18 +21,28 @@ html {
     color: rgb(194, 114, 49);
     text-align: center;
     font-size: 50px;
+    padding-bottom: 50px;
 }
 
 .about img {
     width: 500px;
     height: 500px;
+    border-style: solid;
+    border-color: rgb(194, 114, 49);
+    background-attachment: fixed;
+}
+
+.about {
+    padding-bottom: 100px;
 }
 
 .carousel-item {
+    background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
     position: relative;
     display: none;
     padding-left: 300px;
     padding-right: 300px;
+    padding-top: 100px;
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -58,5 +68,19 @@ html {
 }
 
 #navbarNav {
-    color: khaki;
+    color: rgb(194, 114, 49);
+}
+
+.jumbotron-fluid {
+    background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-attachment: fixed;
+    color: rgb(194, 114, 49);
+}
+
+.order-summary {
+    background-attachment: fixed;
+    background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }

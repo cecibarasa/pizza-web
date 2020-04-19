@@ -81,6 +81,15 @@
                         </select>
                             <label for="number">Number of Pizza</label>
                             <input type="number" class="form-control" name="Number" id="numberOfPizzas" placeholder="Number of pizzas" min="1" required>
+                            <label for="">Delivery</label>
+                            <div>
+                                <input type="radio" id="pick" name="delivery" value="0" checked>
+                                <label for="pick">Pick Up</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="deliver" name="delivery" value="200" checked>
+                                <label for="deliver">Delivery</label>
+                            </div>
                             <button type="submit" class="btn btn-success checkout" id="checkout">Checkout</button>
                         </form>
                     </div>
@@ -94,8 +103,8 @@
             </ol>
 
             <div class="d-block mx-auto text-center">
-                <button class="deliver" value="200" name="deliver">Make Delivery</button>
-                <button class="delivernot" value="0" name="deliver">Pick Up</button>
+                <button class="deliver">Make Delivery</button>
+                <button class="delivernot">Pick Up</button>
             </div>
             <div class="order-overlay">
                 <div class="customerdata row">
@@ -105,6 +114,8 @@
                         <input type="number" class="form-control cdata" placeholder="Enter your phone number: " id="phone">
                         <input type="text" class="form-control cdata" placeholder="Enter the location: " id="location">
                         <button class="btn bg-info text-center d-block mx-auto go" id="deliver">Make Delivery</button>
+                        <ol id="list1" class="text-center sum">
+                        </ol>
                     </form>
 
                     <div class="col-sm-3"></div>

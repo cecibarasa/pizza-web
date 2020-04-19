@@ -5,10 +5,13 @@ html {
 .container {
     background-attachment: fixed;
     background-image: url("../image/black.jpg");
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .navbar {
     float: right;
+    color: rgb(194, 114, 49);
+    background-color: rgb(194, 114, 49);
 }
 
 .container-overlay h1 {
@@ -75,6 +78,7 @@ html {
     background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
     background-attachment: fixed;
     color: rgb(194, 114, 49);
+    display: block;
 }
 
 .order-summary {
@@ -83,4 +87,5 @@ html {
     padding: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    color: white
 }

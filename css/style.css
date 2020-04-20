@@ -4,7 +4,6 @@ html {
 
 .container {
     background-attachment: fixed;
-    background-image: url("../image/black.jpg");
     -webkit-backdrop-filter: blur(8px);
 }
 
@@ -12,6 +11,11 @@ html {
     float: right;
     color: rgb(194, 114, 49);
     background-color: rgb(194, 114, 49);
+}
+
+.container-overlay {
+    background-image: url("https://images.unsplash.com/photo-1501459522532-9f67219c9c7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-attachment: fixed;
 }
 
 .container-overlay h1 {
@@ -53,6 +57,7 @@ html {
     background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
     position: relative;
     display: none;
+    height: 700px;
     padding-left: 300px;
     padding-right: 300px;
     padding-top: 100px;
@@ -71,8 +76,11 @@ html {
 }
 
 .intro li {
-    background: transparent;
     color: khaki;
+}
+
+.intro {
+    background-image: url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
 }
 
 .jumbotron {
@@ -85,26 +93,32 @@ html {
 }
 
 .jumbotron-fluid {
-    background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-image: url("https://images.unsplash.com/photo-1516824237444-09453e0027ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
     background-attachment: fixed;
-    color: rgb(194, 114, 49);
+    color: rgb(36, 35, 35);
     display: block;
 }
 
 .order-summary {
     background-attachment: fixed;
-    background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-image: url("https://images.unsplash.com/photo-1488903809927-48c9b4e43700?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=397&q=80");
     padding: 50px;
     padding-left: 100px;
     padding-right: 100px;
-    color: white
+    color: rgb(239, 240, 243);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contacts {
-    background-color: rgb(194, 114, 49);
+    color: black;
     border-style: double;
+    text-align: center;
 }
 
-ol {
-    background-image: url("../image/wood1.jpeg");
+.social {
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
 }

@@ -25,6 +25,14 @@ $('#orders').on('submit', function() {
         custom: 200
     };
 
+    function pizza(flavours, size, crust, topping, number) {
+        this.flavours = flavours,
+            this.size = _size,
+            this.crust = _crust,
+            this.topping = _topping,
+            this.number = _numberOfPizzas
+    }
+
     var flavours = $('select#flavor option:checked').val();
     var flavourCost = 1000;
     var _size = $('select#size option:checked').val();
@@ -36,6 +44,7 @@ $('#orders').on('submit', function() {
 
     //var delivery = $('select')
 
+    pizza.prototype.subTotal = flavourCost + size[_size] + crust[_crust] + topping[_topping] * _numberOfPizzas;
     var subTotal = flavourCost + size[_size] + crust[_crust] + topping[_topping] * _numberOfPizzas;
 
     var total = subTotal + name[delivery];
@@ -60,7 +69,7 @@ $(function() {
     $('.deliver').click(function() {
         $('.customerdata').show();
         var mylist = $('#orders').val();
-        $('#list').append(`<li>${flavours}<br>${flavourCost}<br> ${_size}<br>${_crust}<br> ${_topping}<br>${total}</li>`);
+        $('#list1').append(`<li>${flavours}<br>${flavourCost}<br> ${_size}<br>${_crust}<br> ${_topping}<br>${total}</li>`);
         return false
 
     });

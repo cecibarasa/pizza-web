@@ -125,4 +125,6 @@ html {
 
 #list {
     background-color: chocolate;
+    font-weight: bold;
+    font-size: 50px;
 }

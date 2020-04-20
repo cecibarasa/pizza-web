@@ -60,12 +60,12 @@ $('#orders').on('submit', function() {
 
 
     var mylist = $('#orders').val();
-    $('#list').append(`<li>${flavours}<br> ${_size}<br>${_crust}<br> ${_topping}<br>${subTotal}</li>`);
-    return false,
+    $('#list').append(`<li>${flavours}<br> ${_size}<br>${_crust}<br> ${_topping}<br>'Total Charge'${subTotal}</li>`);
+    return false
 
-        $('#orders').each(function() {
-            this.reset();
-        });
+    $('#orders').each(function() {
+        this.reset();
+    });
 
 
 
@@ -92,7 +92,7 @@ $("#form").submit(function(event) {
     let location = $("#location").val();
 
     if ($("#name").val() && $("#phone").val() && $("#location")) {
-        alert("Hey " + name + ", " + " Your delivery cost is 200 and on the way to" + "  " + location)
+        alert(`Hey ${name},  Your delivery cost is 200 and on the way to  ${location}`)
     } else {
         alert("Please provide your correct name and location");
     }

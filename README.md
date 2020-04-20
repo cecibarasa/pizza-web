@@ -16,5 +16,5 @@ A pizza website that can allow the user to order food online and have it deliver
 * ` JQUERY`
 * ` MARKDOWN`
 ## [Support and contact details](https://www.linkedin.com/in/cecilia-barasa-4a8311195/)
-### [License]()
+### [License](https://cecibarasa.github.io/pizza-web/)
 Copyright (c) 2020 **Cecilia Barasa**

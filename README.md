@@ -3,7 +3,7 @@
 #### By **Cecilia Barasa**
 ## Description
 A pizza website that can allow the user to order food online and have it delivered to them.
-## [Live Site](https://cecibarasa.github.io/Delani-studio/)
+## [Live Site](https://cecibarasa.github.io/pizza-web/)
 ## Screenshot
 ![](shot.png)
 ## Setup/Installation Requirements

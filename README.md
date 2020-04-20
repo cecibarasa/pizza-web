@@ -5,7 +5,7 @@
 A pizza website that can allow the user to order food online and have it delivered to them.
 ## [Live Site](https://cecibarasa.github.io/Delani-studio/)
 ## Screenshot
-![]()
+![](shot.png)
 ## Setup/Installation Requirements
 * ` Google Chrome`
 ## Technologies Used

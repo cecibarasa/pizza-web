@@ -101,7 +101,7 @@ html {
 
 .order-summary {
     background-attachment: fixed;
-    background-image: url("https://images.unsplash.com/photo-1488903809927-48c9b4e43700?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=397&q=80");
+    background-image: url("https://images.unsplash.com/photo-1531265726475-52ad60219627?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80");
     padding: 50px;
     padding-left: 100px;
     padding-right: 100px;
@@ -124,7 +124,6 @@ html {
 }
 
 #list {
-    background-color: chocolate;
     font-weight: bold;
     font-size: 50px;
 }

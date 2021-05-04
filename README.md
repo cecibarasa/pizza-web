@@ -5,7 +5,7 @@
 A pizza website that can allow the user to order food online and have it delivered to them.
 ## [Live Site](https://cecibarasa.github.io/pizza-web/)
 ## Preview
-![](demo.png)
+
 ![](Screenshot(2).png)
 ## Setup/Installation Requirements
 * ` Google Chrome`

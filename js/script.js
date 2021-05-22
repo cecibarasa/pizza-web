@@ -17,7 +17,7 @@ function placeOrder() { //function for placing an order
       });
   var number = $("#pizza-number").val();
   var sizeCost; //set different prices for the different pizza flavors depending on their size
-  if (flavor === "Bbq Beef" || flavor === "Bbq Chicken" || flavor === "Hawaiian" || flavor === "Pulled Pork") {
+  if (flavor === "Barbeque Beef Pizza" || flavor === "Barbeque Chicken Pizza" || flavor === "Barbeque Pork Pizza" || flavor === "Chicken Tikka Pizza") {
       if (size === "Small") {
           sizeCost = 400;
       } else if (size === "Medium") {
@@ -25,7 +25,7 @@ function placeOrder() { //function for placing an order
       } else if (size === "Large") {
           sizeCost = 900;
       }
-  } else if (flavor === "Bbq Pork" || flavor === "Grilled Pork" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Pepperoni") {
+  } else if (flavor === "Hawaiian Pizza" || flavor === "Margharita Pizza" || flavor === "Mushroom Pizza" || flavor === "Veggi Pizza" || flavor === "Pulled Pork Pizza") {
       if (size === "Small") {
           sizeCost = 450;
       } else if (size === "Medium") {
@@ -33,15 +33,7 @@ function placeOrder() { //function for placing an order
       } else if (size === "Large") {
           sizeCost = 950;
       }
-  } else if (flavor === "Chicken Tikka" || flavor === "Gamberi" || flavor === "Mushroom" || flavor === "Oyster" || flavor === "Spicy Veggie" || flavor === "Original Veggie") {
-      if (size === "Small") {
-          sizeCost = 500;
-      } else if (size === "Medium") {
-          sizeCost = 750;
-      } else if (size === "Large") {
-          sizeCost = 1100;
-      }
-  }
+  } 
   var crustCost; //set prices for different crust types
   if (crust === "Gluten Free") {
       crustCost = 230;
